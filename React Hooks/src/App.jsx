@@ -18,8 +18,8 @@ function App() {
       <Counter />
       <Greeting />
       <Main>
-        {isOpen ? <Modal><h3>Hello from the modal</h3></Modal> : null}
-        <button onClick={handleModal}>Show / Hide Modal</button>
+        {isOpen ? <Modal><h3>Hello</h3><img src="./src/assets/Happy.jpg" /></Modal> : null}
+        <button onClick={handleModal}>{isOpen ? 'Hide Modal' : 'Show Modal'}</button>
       </Main>
     </>
   )

@@ -1,0 +1,15 @@
+.mainStyling {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+        border: 0;
+        background: #1c1c1c;
+        border: 3px solid #712f2f;
+        color: #fff;
+        padding: 1rem 2rem;
+    }
+}
