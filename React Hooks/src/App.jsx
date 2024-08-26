@@ -13,12 +13,24 @@ function App() {
     console.log(isOpen);
   }
 
+  const closeModal = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  }
+
   return (
     <>
       <Counter />
       <Greeting />
-      <Main>
-        {isOpen ? <Modal><h3>Hello</h3><img src="./src/assets/Happy.jpg" /></Modal> : null}
+      <Main action={closeModal}>
+        {isOpen ? 
+          <Modal>
+            <h3>Hello</h3>
+            <button onClick={handleModal} className='closeBtn'>X</button>
+            <img src="./src/assets/Happy.jpg" />
+          </Modal> 
+        : null}
         <button onClick={handleModal}>{isOpen ? 'Hide Modal' : 'Show Modal'}</button>
       </Main>
     </>
