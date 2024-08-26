@@ -25,7 +25,7 @@ function App() {
       <Greeting />
       <Main action={closeModal}>
         {isOpen ? 
-          <Modal>
+          <Modal action={closeModal}>
             <h3>Hello</h3>
             <button onClick={handleModal} className='closeBtn'>X</button>
             <img src="./src/assets/Happy.jpg" />
